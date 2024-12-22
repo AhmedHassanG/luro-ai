@@ -38,22 +38,22 @@ const Menu = () => {
                                     >
                                         <Icons.icon className="w-6 h-6" />
                                         <div className="my-2 text-lg font-normal">
-                                            Luro AI
+                                            Denova
                                         </div>
                                         <p className="text-sm text-muted-foreground">
-                                            Your ultimate social media management tool
+                                            Streamline client and vendor onboarding with Denova
                                         </p>
                                     </Link>
                                 </NavigationMenuLink>
                             </li>
-                            <Item title="Content Calendar" href="/features/content-calendar" icon={<CalendarRangeIcon className="w-5 h-5" />}>
-                                Plan and visualize your content strategy.
+                            <Item title="Client Onboarding" href="/features/client-onboarding" icon={<UsersIcon className="w-5 h-5" />}>
+                                Automate document collection and e-signatures.
                             </Item>
-                            <Item title="Hashtag Manager" href="/features/hashtag-manager" icon={<HashIcon className="w-5 h-5" />}>
-                                Research and track trending hashtags.
+                            <Item title="Task Management" href="/features/task-management" icon={<CalendarRangeIcon className="w-5 h-5" />}>
+                                Manage tasks and approvals for seamless workflows.
                             </Item>
-                            <Item title="Competitor Analysis" href="/features/competitor-analysis" icon={<UsersIcon className="w-5 h-5" />}>
-                                Monitor and analyze competitor performance.
+                            <Item title="Document Verification" href="/features/document-verification" icon={<HashIcon className="w-5 h-5" />}>
+                                Verify documents and approvals in real-time.
                             </Item>
                         </ul>
                     </NavigationMenuContent>

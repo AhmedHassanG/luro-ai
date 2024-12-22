@@ -13,10 +13,10 @@ const Features = () => {
             <Container>
                 <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
                     <SectionBadge title="Features" />
-                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
+                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 text-white">
                         Create content faster <br /> and smarter
                     </h2>
-                    <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
+                    <p className="text-base md:text-lg text-center text-white/80 mt-6">
                         Transform your social media strategy with Luro AI&apos;s cutting-edge features, designed to optimize your content creation and engagement like never before.
                     </p>
                 </div>
@@ -27,7 +27,7 @@ const Features = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-[1fr_.65fr] w-full gap-5 lg:gap-5">
                             <MagicCard particles={true} className="flex flex-col items-start size-full bg-primary/[0.08]">
                                 <div className="bento-card flex items-center justify-center min-h-72">
-                                    <span className="text-muted-foreground group-hover:text-foreground mx-auto relative">
+                                    <span className="text-white group-hover:text-foreground mx-auto relative">
                                         <Icons.stars className="w-20 h-20" />
                                     </span>
                                     <Ripple />
@@ -39,10 +39,10 @@ const Features = () => {
                                         <Images.analytics className="w-full h-full" />
                                     </div>
                                     <div className="flex flex-col">
-                                        <h4 className="text-xl font-heading font-medium heading ">
+                                        <h4 className="text-xl font-heading font-medium heading text-white">
                                             Get advanced analytics
                                         </h4>
-                                        <p className="text-sm md:text-base mt-2 text-muted-foreground">
+                                        <p className="text-sm md:text-base mt-2 text-white">
                                             Track your performance with detailed analytics and optimize to get better results.
                                         </p>
                                     </div>
@@ -59,10 +59,10 @@ const Features = () => {
                                         <div className="w-40 h-40 rounded-full bg-primary/10 blur-3xl -z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
                                     </div>
                                     <div className="flex flex-col mt-auto">
-                                        <h4 className="text-xl font-heading font-medium heading">
+                                        <h4 className="text-xl font-heading font-medium heading text-white">
                                             Content ideation
                                         </h4>
-                                        <p className="text-sm md:text-base mt-2 text-muted-foreground">
+                                        <p className="text-sm md:text-base mt-2 text-white">
                                             Generate ideas for your content with our AI-powered tools to create engaging posts in seconds.
                                         </p>
                                     </div>
@@ -72,7 +72,7 @@ const Features = () => {
                                 <MagicCard particles={true} className="flex flex-col items-start w-full row-span- row-start-[0.5] h-32 bg-primary/[0.08]">
                                     <div className="bento-card w-full relative items-center justify-center">
                                         <div className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                                            <p className="text-base text-muted-foreground text-justify [mask-image:radial-gradient(50%_50%_at_50%_50%,#BAB3FF_0%,rgba(186,179,255,0)_90.69%)]">
+                                            <p className="text-base text-white text-justify [mask-image:radial-gradient(50%_50%_at_50%_50%,#BAB3FF_0%,rgba(186,179,255,0)_90.69%)]">
                                                 We use AI to help you create content that resonates with your audience. Our tools are designed to optimize your content creation and engagement like never before. Transform your social media strategy with Luro AI&apos;s cutting-edge features. Reach your audience with the right message at the right time. Create content faster and smarter with Luro AI. Transform your social media strategy with Luro AI&apos;s cutting-edge features. Create content faster and smarter with Luro AI. Transform your social media strategy with Luro AI&apos;s cutting-edge features. Create content faster and smarter with Luro AI.
                                             </p>
                                         </div>
@@ -97,10 +97,10 @@ const Features = () => {
                             <MagicCard particles={true} className="flex flex-col items-start w-full row-span-1 bg-primary/[0.08]">
                                 <div className="bento-card w-full flex-row gap-6">
                                     <div className="flex flex-col mb-auto">
-                                        <h4 className="text-xl font-heading font-medium heading ">
+                                        <h4 className="text-xl font-heading font-medium heading text-white">
                                             Seamless integrations
                                         </h4>
-                                        <p className="text-sm md:text-base mt-2 text-muted-foreground">
+                                        <p className="text-sm md:text-base mt-2 text-white">
                                             Connect your favorite tools and platforms to streamline your workflow and save time.
                                         </p>
                                     </div>
@@ -120,10 +120,10 @@ const Features = () => {
                                         <Images.image className="w-full h-40 lg:h-auto" />
                                     </div>
                                     <div className="flex flex-col mt-auto">
-                                        <h4 className="text-xl font-heading font-medium heading ">
+                                        <h4 className="text-xl font-heading font-medium heading text-white">
                                             Image generation with AI
                                         </h4>
-                                        <p className="text-sm md:text-base mt-2 text-muted-foreground">
+                                        <p className="text-sm md:text-base mt-2 text-white">
                                             Create stunning images with AI-powered tools in seconds.
                                         </p>
                                     </div>
@@ -135,10 +135,10 @@ const Features = () => {
                                         <Images.hash className="w-full h-40 lg:h-52" />
                                     </div>
                                     <div className="flex flex-col mt-auto">
-                                        <h4 className="text-xl font-heading font-medium heading ">
+                                        <h4 className="text-xl font-heading font-medium heading text-white">
                                             Hashtags suggestions
                                         </h4>
-                                        <p className="text-sm md:text-base mt-2 text-muted-foreground">
+                                        <p className="text-sm md:text-base mt-2 text-white">
                                             Get hashtag suggestions based on your content and audience to increase your reach and engagement.
                                         </p>
                                     </div>
@@ -152,4 +152,4 @@ const Features = () => {
     )
 };
 
-export default Features
+export default Features;

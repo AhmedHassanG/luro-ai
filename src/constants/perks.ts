@@ -1,36 +1,37 @@
 import { Icons } from "@/components";
-import { ZapIcon, ChartSplineIcon, LifeBuoyIcon, PaletteIcon, ShieldCheckIcon, WaypointsIcon, BrainCircuitIcon, SparklesIcon } from "lucide-react";
+import { ZapIcon, ChartSplineIcon, LifeBuoyIcon, PaletteIcon, ShieldCheckIcon, WaypointsIcon } from "lucide-react";
 import React from "react";
 
 export const PERKS = [
     {
         icon: ZapIcon,
         title: "Fast and Efficient",
-        description: "Experience quick and seamless content creation with our optimized AI tools."
+        description: "Experience fast onboarding with streamlined document collection and task management."
     },
     {
         icon: ChartSplineIcon,
         title: "Insightful Analytics",
-        description: "Gain valuable insights and analytics to enhance your social media strategy."
+        description: "Access real-time insights and analytics to track your client and vendor progress."
     },
     {
         icon: LifeBuoyIcon,
         title: "24/7 Support",
-        description: "Our team is available around the clock to assist with any issues or questions."
+        description: "Get round-the-clock support for any platform-related questions or issues."
     },
     {
         icon: PaletteIcon,
         title: "Customizable Solutions",
-        description: "Tailor the tools and features to fit your unique social media needs."
+        description: "Personalize your workflows, intake forms, and approval processes for unique needs."
     },
     {
         icon: ShieldCheckIcon,
         title: "Secure and Reliable",
-        description: "Trust our platform to keep your data safe and ensure consistent performance."
+        description: "Ensure security and compliance with end-to-end encryption for your sensitive documents."
     },
     {
         icon: WaypointsIcon,
         title: "Seamless Integration",
-        description: "Easily integrate with your existing social media platforms and tools."
+        description: "Integrate effortlessly with popular CRMs and communication platforms like Slack and Salesforce."
     },
 ];
+

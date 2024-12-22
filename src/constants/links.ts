@@ -1,4 +1,4 @@
-import { ClockIcon, MessageSquare, BarChart2, FileTextIcon, UserPlusIcon, CreditCardIcon, SettingsIcon, LogOut, Headphones, ChartPieIcon, LucideIcon, MessagesSquareIcon, NewspaperIcon, MegaphoneIcon, LineChartIcon, MessageSquareTextIcon, UsersIcon } from 'lucide-react';
+import { ClockIcon, MessageSquare, BarChart2, FileTextIcon, UserPlusIcon, CreditCardIcon, SettingsIcon, LogOut, Headphones, ChartPieIcon, LucideIcon, MessagesSquareIcon, NewspaperIcon, MegaphoneIcon, LineChartIcon, MessageSquareTextIcon, UsersIcon, GitBranchIcon, ClipboardIcon, LayoutTemplateIcon, PuzzleIcon } from 'lucide-react';
 
 type Link = {
     href: string;
@@ -8,29 +8,44 @@ type Link = {
 
 export const SIDEBAR_LINKS: Link[] = [
     {
-        href: "/dashboard",
-        label: "Dashboard",
+        href: "/app",
+        label: "Overview",
         icon: ChartPieIcon,
     },
     {
-        href: "/dashboard/campaigns",
-        label: "Campaigns",
-        icon: MegaphoneIcon
+        href: "/dashboard/workflows",
+        label: "Workflows",
+        icon: GitBranchIcon
+    },
+    {
+        href: "/dashboard/clients",
+        label: "Clients",
+        icon: UsersIcon
+    },
+    {
+        href: "/dashboard/documents",
+        label: "Documents",
+        icon: FileTextIcon
+    },
+    {
+        href: "/dashboard/forms",
+        label: "Forms",
+        icon: ClipboardIcon
+    },
+    {
+        href: "/dashboard/templates",
+        label: "Templates",
+        icon: LayoutTemplateIcon
+    },
+    {
+        href: "/dashboard/integrations",
+        label: "Integrations",
+        icon: PuzzleIcon
     },
     {
         href: "/dashboard/analytics",
         label: "Analytics",
         icon: LineChartIcon
-    },
-    {
-        href: "/dashboard/posts",
-        label: "Posts",
-        icon: MessageSquareTextIcon
-    },
-    {
-        href: "/dashboard/engagement",
-        label: "Engagement",
-        icon: UsersIcon
     },
     {
         href: "/dashboard/billing",

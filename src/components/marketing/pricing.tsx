@@ -15,7 +15,7 @@ type Plan = "monthly" | "yearly";
 
 const Pricing = () => {
     return (
-        <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24  w-full relative">
+        <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24 w-full relative">
             <Container>
                 <div className="flex flex-col items-center text-center max-w-xl mx-auto">
                     <SectionBadge title="Choose your plan" />
@@ -68,7 +68,7 @@ const Pricing = () => {
                 </Container>
             </div>
         </div>
-    )
+    );
 };
 
 const Plan = ({
@@ -97,7 +97,7 @@ const Plan = ({
         if (plan === "monthly") {
             return monthlyPrice === 0 ? 0 : monthlyPrice;
         } else if (plan === "yearly") {
-            const discountedPrice = Math.round((yearlyPrice * 0.8) / 12);
+            const discountedPrice = Math.round((yearlyPrice * 0.8) / 12); // 20% discount for yearly plans
             return yearlyPrice === 0 ? 0 : discountedPrice;
         }
         return 0;
@@ -107,7 +107,6 @@ const Plan = ({
 
     return (
         <div key={index} className="w-full relative flex flex-col saturate-150 rounded-2xl">
-
             <div
                 className={cn(
                     "flex flex-col size-full border rounded-2xl relative p-3 [background-image:linear-gradient(345deg,rgba(255,255,255,0.01)_0%,rgba(255,255,255,0.03)_100%)]",
@@ -132,13 +131,12 @@ const Plan = ({
                 <hr className="shrink-0 border-none w-full h-px bg-border" role="separator" />
                 <div className="relative flex flex-col flex-1 align-top w-full p-3 h-full break-words text-left gap-4">
                     <div className="flex items-end gap-2">
-                        <div className="flex items-end gap-1 w-40">
+                        <div className="flex items-end gap-1 w-40 justify-start">
                             <span className="text-3xl md:text-4xl font-bold">
                                 ${displayedPrice === 0 ? 0 : <NumberTicker value={displayedPrice} />}
                             </span>
-                            {/* In here 120 * 0.8 = 96 and /12 to get monthly price */}
-                            <span className="text-lg text-muted-foreground font-medium font-headin">
-                                per {plan === "monthly" ? "month" : "month"}
+                            <span className="text-lg text-muted-foreground font-medium font-heading">
+                                /{plan === "monthly" ? "month" : "month"}
                             </span>
                         </div>
                         <AnimatePresence>
@@ -173,7 +171,6 @@ const Plan = ({
                         variant={id === "pro" ? "default" : "tertiary"}
                         className="w-full hover:scale-100 hover:translate-y-0 shadow-none"
                     >
-
                         <Link href={""}>
                             {buttonText}
                         </Link>
@@ -181,7 +178,7 @@ const Plan = ({
                 </div>
             </div>
         </div>
-    )
+    );
 };
 
-export default Pricing
+export default Pricing;
